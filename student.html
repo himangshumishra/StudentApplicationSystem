@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <h1>Student Dashboard</h1>
+    <div class="container">
+        <div class="student-section">
+            <h2>Leave Application</h2>
+            <form id="leaveForm">
+                <label for="studentName">Name:</label>
+                <input type="text" id="studentName" required>
+                <label for="leaveReason">Reason:</label>
+                <textarea id="leaveReason" required></textarea>
+                <button type="submit">Apply</button>
+            </form>
+            <div id="applicationStatus"></div>
+        </div>
+        <div class="student-section">
+            <h2>Your Applications</h2>
+            <div id="studentApplications"></div>
+        </div>
+    </div>
+    <script src="./student.js"></script>
+</body>
+</html>
